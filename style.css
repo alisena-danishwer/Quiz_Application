@@ -1,0 +1,146 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00aaff; /* Bright blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+
+/* Main container with transparent overlay */
+.main-container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85); /* Slight white overlay for readability */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #1d87e4; /* Blue color for the title */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    color: #555;
+}
+
+.quiz-container {
+    padding: 20px;
+}
+
+.question-section {
+    margin-bottom: 20px;
+}
+
+.question-number {
+    font-size: 18px;
+    color: #1d87e4; /* Blue color for question number */
+    font-weight: bold;
+}
+
+.question-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.feedback {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Answer buttons with a blue-green gradient */
+.answer-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.answer-buttons button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1d87e4, #27ae60); /* Blue to green gradient */
+    color: white;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.answer-buttons button:hover {
+    background: linear-gradient(135deg, #27ae60, #1d87e4); /* Reverse gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+button.correct {
+    background-color: #27ae60; /* Green for correct answer */
+    color: white;
+}
+
+button.wrong {
+    background-color: #e74c3c; /* Red for wrong answer */
+    color: white;
+}
+
+/* Styling for Next, Submit, and Restart buttons */
+.next-btn, .submit-btn, .restart-btn {
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #1d87e4, #27ae60); /* Blue to green gradient */
+    color: white;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific display settings */
+.next-btn, .submit-btn {
+    display: none;
+}
+
+.next-btn:hover, .submit-btn:hover, .restart-btn:hover {
+    background: linear-gradient(135deg, #27ae60, #1d87e4); /* Reverse gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Result section styling */
+.result-section {
+    display: none;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* Slight transparency */
+    border: 2px solid #1d87e4; /* Blue border for result section */
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.final-score {
+    font-size: 22px;
+    color: #2c3e50;
+    font-weight: bold;
+}

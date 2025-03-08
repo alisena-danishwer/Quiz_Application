@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>Quiz Challenge</h1>
+            <p>Please choose the correct answer and see your score at the end!</p>
+        </header>
+        <div class="quiz-container">
+            <div class="question-section">
+                <div id="question-number" class="question-number">Question 1</div>
+                <div id="question" class="question-text"></div>
+            </div>
+            <div id="feedback" class="feedback"></div>
+            <div id="answer-buttons" class="answer-buttons"></div>
+            <button id="next-btn" class="next-btn">Next Question</button>
+
+            <button id="submit-btn" class="submit-btn" style="display: none;">Submit</button>
+        </div>
+        <div id="result-section" class="result-section" style="display: none;">
+            <h2>Your Quiz Results</h2>
+            <p id="final-score" class="final-score"></p>
+            <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+        </div>
+        <p>Good luck, and enjoy learning!</p>
+        <p>This Quiz app is developed by Ali Sena "Danishwer" </p>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
